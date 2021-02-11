@@ -1,4 +1,9 @@
 <template>
+  <h1>Hello!</h1>
+</template>
+
+<template>
+
   <div id="app">
     <header>
       <span>Vue.js PWA</span>
@@ -8,7 +13,8 @@
       <router-view></router-view>
     </main>
   </div>
-</template>
+  
+  
 
 <script>
 export default {
