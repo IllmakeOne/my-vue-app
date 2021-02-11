@@ -24,51 +24,11 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js PWA'
+      msg: 'Welcome to Your Vue.js LMAO'
     }
   }
 }
 </script>
-
-<vue-simple-complete
-        :items="items"
-        :objectMatchkey="objectMatchkey"
-        :template="template"
-        @inputChanged="onInputChanged">
-</vue-simple-complete>
-
-<script>
-  import VueSimpleComplete from "vue-simple-complete";
-
-  export default {
-    name: 'app',
-    components: {
-      "vue-simple-complete": VueSimpleComplete
-    },
-    data() {
-        return {
-            items: [
-                { Id: 1, Name: "Amsterdam" },
-                { Id: 2, Name: "Berlin" },
-                { Id: 3, Name: "London" },
-                { Id: 4, Name: "Mumbai" }
-            ],
-            objectMatchkey: "Name",
-            template: {
-                keys: ["Id", "Name"],
-                separator: ", "
-            },
-            changedInput: ""
-        };
-    },
-    methods: {
-        onInputChanged(value) {
-            this.changedInput = value;
-        }
-    }
-  };
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 h1, h2 {

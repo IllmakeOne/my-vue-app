@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-
+import InputList from '@/components/InputList'
 Vue.use(Router)
 
 export default new Router({
@@ -10,18 +10,11 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/in/',
+      name: 'InputList',
+      component: InputList
     }
   ]
 })
-<script>
-  import VueSimpleComplete from "vue-simple-complete";
-
-  export default {
-    name: 'app',
-    data() {
-    },
-    components: {
-      VueSimpleComplete
-    },
-  };
-</script>
